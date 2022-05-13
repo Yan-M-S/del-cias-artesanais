@@ -9,7 +9,6 @@ body {
   background: var(--primary-color);
   font-family: 'DM Sans';
   font-size: 1.6rem;
-
   text-align: center;
 }
 
@@ -19,17 +18,18 @@ body {
   --primary-color: hsl(334, 30%, 90%);
   --paragraph: hsl(210, 9%, 31%);
   --button-color: hsl(340, 59%, 84%);
+  --card-color: hsl(340, 59%, 84%);
+  --card-paragrafo: hsl(343, 66%, 89%);
 }
 
 .wrapper {
-  width: 37.5rem;
   margin-inline: auto;
 
   padding-inline: 2.4rem;
 }
 
 header h1 {
-  font-size: 9.3rem;
+  font-size: 8rem;
   font-family: 'Dancing Script', cursive;
   line-height: 80%;
   margin-bottom: 2.4rem;
@@ -71,12 +71,10 @@ header button {
   margin-right: auto;
   margin-left: auto;
 }
-
-header img {
-  width: 100%;
-  display: block;
-  margin-inline: auto;
+header img.logo {
   object-position: 0 2rem;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
 }
 
 header .h1 h1 {
@@ -86,14 +84,85 @@ header .h1 h1 {
 }
 header h4 {
   margin-top: 3rem;
-  margin-right: 2rem;
   font-size: 2rem;
   margin-bottom: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 section .wrapper p {
   text-align: left;
+  line-height: 170%;
+  margin-left: 1rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+#services .card {
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid var(--);
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .imag {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 1rem;
+}
+.card-p {
+  border: 0.5px solid black;
+  display: flex;
+  width: 33.5rem;
+  height: 20rem;
+
+  background-color: var(--card-paragrafo);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rodape h2 {
+  text-align: center;
+  margin-left: 3rem;
+}
+.rodape {
+  margin-top: 3rem;
+  width: 100%;
+}
+.rodape p {
+  display: flex;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.rodape button {
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 6rem;
+
+  height: 6.2rem;
+  width: 26.3rem;
+
+  background: var(--button-color);
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
 }
